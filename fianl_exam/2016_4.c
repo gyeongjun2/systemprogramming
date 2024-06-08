@@ -17,12 +17,12 @@ int main(int argc, char *argv[]){
 	pid=fork();
 
 	if(pid==0){
-		int len = argc-1; //argument number argv[1]~...argv[n]
+		//int len = argc-1; //argument number argv[1]~...argv[n]
 		close(1);
 		dup(fd[1]);
 		close(fd[0]);
 		close(fd[1]);
-		execv(argv[2],&argv[3]);
+		execv(argv[2],&argv[2]);
 		exit(128);
 
 	}

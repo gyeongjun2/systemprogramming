@@ -34,7 +34,7 @@ int main(int argc, char *argv[]){
 	
 	wait(&status);
 
-	while((n=read(pip[0], buf, sizeof(buf)))>0){
+	while((n=read(0, buf, sizeof(buf)))>0){
 		write(fd, buf, n);
 	}
 	close(pip[0]);

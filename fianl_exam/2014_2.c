@@ -6,24 +6,23 @@
 
 int myalarm(int sec){
 
-	struct itimerval t_val;
+	struct itimerval t_val, old_val;
 
 	if(sec==0){
 		t_val.it_value.tv_sec = 0;
 		t_val.it_value.tv_usec = 0;
 		t_val.it_interval.tv_sec = 0;
 		t_val.it_interval.tv_usec = 0;
-		setitimer(ITIMER_REAL, &t_val,NULL);
-		return t_val.it_value.tv_sec;
 	}
-
+	else{
 	t_val.it_value.tv_sec = sec;
 	t_val.it_value.tv_usec = 0;
 	t_val.it_interval.tv_sec = 0;
 	t_val.it_interval.tv_usec = 0;
-	setitimer(ITIMER_REAL, &t_val,NULL);
-	return t_val.it_value.tv_sec;
-
+	}
+	setitimer(ITIMER_REAL, &t_val,&old_val);
+	
+	return old_val.it_value.tv_sec;
 
 
 }
@@ -37,12 +36,13 @@ void handler(int sig){
 
 }
 
-int main(){
+int main(int argc, char *argv[]){
 
 
 	signal(SIGALRM, handler);
+	int sec = atoi(argv[1]);
 	
-	myalarm(5);
+	myalarm(sec);	//if 5
 
 	sleep(2);
 
