@@ -1,0 +1,54 @@
+log
+	FIFO503	:ls
+	FIFO506	:ls -l
+	FIFO542	:date
+	FIFO545	:ls -l
+	FIFO548	:date -x
+	FIFO598	:ls
+	FIFO601	:ls -l
+	FIFO604	:date
+	FIFO607	:date -x
+	FIFO634	:date -x
+	FIFO637	:date -x
+	FIFO640	:date
+	FIFO658	:ls
+	FIFO661	:date -x
+	FIFO682	:ls
+	FIFO685	:ls -a
+	FIFO688	:date
+	FIFO691	:date -x
+	FIFO704	:ls
+	FIFO707	:ls -a
+	FIFO710	:date -x
+	FIFO720	:date -x
+	FIFO724	:date -x
+	FIFO735	:date -x
+	FIFO738	:date
+	FIFO748	:date
+	FIFO751	:date -x
+	FIFO761	:date -x
+	FIFO771	:date -x
+	FIFO774	:date
+	FIFO786	:date
+	FIFO789	:date -x
+	FIFO801	:date -x
+	FIFO804	:date
+	FIFO807	:date
+	FIFO810	:ls -a
+	FIFO813	:ls -l
+	FIFO826	:date
+	FIFO829	:date -x
+	FIFO1649	:ls -l
+	FIFO1674	:ls -a
+	FIFO1677	:date -x
+	FIFO1701	:date
+	FIFO1704	:date -x
+	FIFO1714	:date -x
+	FIFO1724	:date -x
+	FIFO72	:ls -a
+	FIFO75	:ls
+	FIFO78	:ls -l
+	FIFO81	:date
+	FIFO86	:date -x
+	FIFO2117	:ls -l
+	FIFO2120	:ls -a
